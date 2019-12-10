@@ -79,12 +79,11 @@ DATABASES = {
     #primary db is mysql
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'NAME': '',
-        'NAME': '',
-        'NAME': '',
-        'NAME': '',
-
+        'NAME': 'pydb',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'USER': 'root',
+        'PASSWORD': 'root',
     },
     'sqlt': {
         'ENGINE': 'django.db.backends.sqlite3',
