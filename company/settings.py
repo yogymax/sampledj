@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'emp',
+    'dept',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +76,17 @@ WSGI_APPLICATION = 'company.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
+    #primary db is mysql
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'NAME': '',
+        'NAME': '',
+        'NAME': '',
+        'NAME': '',
+
+    },
+    'sqlt': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
